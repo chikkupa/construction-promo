@@ -287,6 +287,52 @@ h3 {
   margin-top: 1.6rem;
 }
 
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2.4rem 6vw 0;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.35rem 1.25rem 1.45rem;
+  box-shadow: var(--shadow);
+}
+
+.stat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.85rem;
+  border-radius: 14px;
+  background: rgba(196, 92, 38, 0.12);
+  color: var(--accent);
+}
+
+.stat-icon svg {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+.stat-value {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.stat-label {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+}
+
 .intro,
 .services-preview,
 .steps,
@@ -842,6 +888,11 @@ h3 {
 
   .step-list {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
 
   .reason-grid {

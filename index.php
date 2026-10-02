@@ -18,6 +18,29 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
+<section class="stats" aria-label="Our record">
+  <article class="stat-card" aria-label="10+ years of experience">
+    <span class="stat-icon"><?php echo icon('years'); ?></span>
+    <p class="stat-value"><span class="count" data-count="10">0</span>+</p>
+    <p class="stat-label">Years of experience</p>
+  </article>
+  <article class="stat-card" aria-label="70+ houses constructed">
+    <span class="stat-icon"><?php echo icon('home'); ?></span>
+    <p class="stat-value"><span class="count" data-count="70">0</span>+</p>
+    <p class="stat-label">Houses constructed</p>
+  </article>
+  <article class="stat-card" aria-label="500+ homes beautified">
+    <span class="stat-icon"><?php echo icon('brush'); ?></span>
+    <p class="stat-value"><span class="count" data-count="500">0</span>+</p>
+    <p class="stat-label">Homes beautified</p>
+  </article>
+  <article class="stat-card" aria-label="70+ solar installations">
+    <span class="stat-icon"><?php echo icon('sun'); ?></span>
+    <p class="stat-value"><span class="count" data-count="70">0</span>+</p>
+    <p class="stat-label">Solar installations</p>
+  </article>
+</section>
+
 <section class="intro">
   <div class="intro-copy">
     <p class="eyebrow">The work</p>
@@ -98,4 +121,5 @@ require __DIR__ . '/includes/header.php';
 </section>
 
 <?php require __DIR__ . '/includes/enquiry-form.php'; ?>
+<script src="js/counters.js"></script>
 <?php require __DIR__ . '/includes/footer.php'; ?>
