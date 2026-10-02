@@ -2,16 +2,15 @@
 
 declare(strict_types=1);
 
-$pageTitle = 'HavenBuild — Homes built, sealed, styled, and powered';
 $active = 'home';
 require __DIR__ . '/includes/header.php';
 ?>
 <section class="hero">
-  <img class="hero-photo" src="images/hero-home.jpg" alt="A finished stone and timber house in evening light">
+  <img class="hero-photo" src="images/hero-home.jpg" alt="A modern Kerala concrete house with a flat roof, porch, and coconut palms">
   <div class="hero-copy">
-    <p class="eyebrow"><?php echo e($site['city']); ?> · Residential</p>
+    <p class="eyebrow">For the house</p>
     <h1><?php echo e($site['tagline']); ?></h1>
-    <p class="lede">Construction, waterproofing, interiors, painting, and rooftop solar. One team for the work the house actually needs.</p>
+    <p class="lede">A house needs a sound structure, dry rooms, a layout that fits daily life, walls that are properly finished, and a roof that can carry its own power.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#enquiry">Get a quote</a>
       <a class="btn btn-line" href="<?php echo e(whatsapp_url()); ?>" target="_blank" rel="noopener">WhatsApp</a>
@@ -23,10 +22,10 @@ require __DIR__ . '/includes/header.php';
   <div class="intro-copy">
     <p class="eyebrow">The work</p>
     <h2>From the structure to the rooms, the paint, and the roof.</h2>
-    <p>We take residential work from the first visit through a written quote. The scope stays on the page, and the house is left clear when the job is done.</p>
+    <p>Each part of that work is handled as its own job. We look at the house first, agree what is included, and only then start. New builds, repairs, and the finishes that make a place feel complete all follow the same path.</p>
     <a class="text-link" href="services.php">See the services</a>
   </div>
-  <img src="images/site-visit.jpg" alt="A contractor and homeowner reviewing the house at the door">
+  <img src="images/site-visit.jpg" alt="Two people talking on the concrete porch of a Kerala house">
 </section>
 
 <section class="services-preview">
@@ -40,7 +39,7 @@ require __DIR__ . '/includes/header.php';
         <img src="<?php echo e($service['image']); ?>" alt="<?php echo e($service['alt']); ?>">
         <span class="card-body">
           <h3><?php echo e($service['name']); ?></h3>
-          <p><?php echo e($service['promise']); ?></p>
+          <p><?php echo e($service['summary']); ?></p>
           <span class="card-link">See this service</span>
         </span>
       </a>

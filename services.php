@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-$pageTitle = 'Services — HavenBuild';
+$pageTitle = 'Home Services in Kollam, Trivandrum and Kerala | HavenBuild';
+$pageDescription = 'Construction in Kollam and Trivandrum, waterproofing in Trivandrum and Kollam, painting in both, and interiors and solar across Kerala.';
+$pageKeywords = 'construction Kollam, waterproofing Trivandrum, interior design Kerala, painting Kollam Trivandrum, solar panel installation Kerala';
 $active = 'services';
 require __DIR__ . '/includes/header.php';
 ?>
@@ -11,7 +13,7 @@ require __DIR__ . '/includes/header.php';
   <div class="page-banner-copy">
     <p class="eyebrow">Services</p>
     <h1>Work for the structure, the rooms, and the roof.</h1>
-    <p class="lede"><?php echo e($site['service_area']); ?>. Pick a service, or send an enquiry and we will help you sort which one fits.</p>
+    <p class="lede">Open a service to see how that job is planned, or send an enquiry and we will help you decide where to begin.</p>
   </div>
 </section>
 
@@ -26,7 +28,7 @@ require __DIR__ . '/includes/header.php';
         <img src="<?php echo e($service['image']); ?>" alt="<?php echo e($service['alt']); ?>">
         <span class="card-body">
           <h3><?php echo e($service['name']); ?></h3>
-          <p><?php echo e($service['promise']); ?></p>
+          <p><?php echo e($service['summary']); ?></p>
           <span class="card-link">Open this service</span>
         </span>
       </a>

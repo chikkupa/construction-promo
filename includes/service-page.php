@@ -17,16 +17,20 @@ if ($service === null) {
     exit;
 }
 
-$pageTitle = $service['name'] . ' — ' . $site['name'];
+$pageTitle = $service['seo_title'];
+$pageDescription = $service['seo_description'];
+$pageKeywords = $service['seo_keywords'];
+$geoPlacename = $service['geo_placename'];
+$geoPosition = isset($service['geo_position']) ? $service['geo_position'] : '';
 $active = $service['slug'];
 require __DIR__ . '/header.php';
 ?>
 <section class="page-banner">
   <img src="<?php echo e($service['image']); ?>" alt="<?php echo e($service['alt']); ?>">
   <div class="page-banner-copy">
-    <p class="eyebrow">Services</p>
+    <p class="eyebrow"><?php echo e($service['coverage']); ?></p>
     <h1><?php echo e($service['name']); ?></h1>
-    <p class="lede"><?php echo e($service['promise']); ?></p>
+    <p class="lede"><?php echo e($service['coverage_note']); ?></p>
     <a class="btn btn-primary" href="index.php?service=<?php echo urlencode($service['name']); ?>#enquiry">Enquire about this</a>
   </div>
 </section>
@@ -72,6 +76,7 @@ require __DIR__ . '/header.php';
         <img src="<?php echo e($other['image']); ?>" alt="<?php echo e($other['alt']); ?>">
         <span class="card-body">
           <h3><?php echo e($other['name']); ?></h3>
+          <p class="coverage"><?php echo e($other['coverage']); ?></p>
           <span class="card-link">Open this service</span>
         </span>
       </a>

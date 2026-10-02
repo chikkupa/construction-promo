@@ -15,11 +15,11 @@ $sent = isset($_GET['sent']) && $_GET['sent'] === '1';
 ?>
 <section class="enquiry" id="enquiry">
   <div class="enquiry-visual">
-    <img src="images/site-visit.jpg" alt="A conversation at the front door before work starts">
+    <img src="images/site-visit.jpg" alt="A conversation on the concrete porch of a Kerala house before work starts">
     <div class="enquiry-copy">
       <p class="eyebrow">Request a quote</p>
       <h2>Tell us about the house.</h2>
-      <p>Complete the form, and we will be in touch to arrange a look at the site.</p>
+      <p>Complete the form, and we will be in touch to arrange a look at the site in Kerala.</p>
       <p class="enquiry-phone"><a href="tel:<?php echo e($site['phone_tel']); ?>"><?php echo e($site['phone_display']); ?></a></p>
     </div>
   </div>
@@ -68,7 +68,7 @@ $sent = isset($_GET['sent']) && $_GET['sent'] === '1';
         </label>
         <label>
           Locality
-          <input type="text" name="locality" maxlength="120" autocomplete="address-level2" placeholder="Neighbourhood in <?php echo e($site['city']); ?>">
+          <input type="text" name="locality" maxlength="120" autocomplete="address-level2" placeholder="Town in Kerala">
         </label>
         <label>
           Message

@@ -8,7 +8,7 @@ declare(strict_types=1);
       <div class="footer-brand">
         <p class="logo"><?php echo e($site['name']); ?></p>
         <p><?php echo e($site['tagline']); ?></p>
-        <p><?php echo e($site['service_area']); ?></p>
+        <p>Work for the structure, the wet areas, the rooms, the paint, and the roof.</p>
       </div>
       <div>
         <h2>Explore</h2>

@@ -5,6 +5,9 @@ declare(strict_types=1);
 require_once __DIR__ . '/includes/db.php';
 
 $pageTitle = 'Enquiries — HavenBuild';
+$pageDescription = 'Saved enquiries for HavenBuild.';
+$pageKeywords = '';
+$noindex = true;
 $active = 'enquiries';
 require __DIR__ . '/includes/header.php';
 
