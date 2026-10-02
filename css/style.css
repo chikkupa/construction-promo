@@ -557,17 +557,90 @@ h3 {
   padding-left: 1.1rem;
 }
 
-.service-page,
 .service-index,
 .more-services {
   padding: 2.4rem 6vw 1rem;
 }
 
-.service-gallery img {
+.service-story {
+  display: grid;
+  gap: 1.6rem;
+  align-items: center;
+  padding: 4.5rem 6vw;
+}
+
+.service-story img {
   width: 100%;
+  height: 100%;
   min-height: 320px;
   object-fit: cover;
   border-radius: 22px;
+}
+
+.story-copy p {
+  max-width: 40rem;
+}
+
+.work-steps,
+.work-gallery,
+.work-scope {
+  padding: 4.5rem 6vw;
+}
+
+.work-steps {
+  background: var(--white);
+}
+
+.work-steps .step-list li {
+  background: var(--paper);
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.gallery-grid figure {
+  margin: 0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.gallery-grid figcaption {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.work-scope {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0;
+}
+
+.scope-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.6rem 1.7rem 1.8rem;
+}
+
+.scope-card h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.scope-card ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.scope-card li + li {
+  margin-top: 0.65rem;
 }
 
 .more-services {
@@ -716,10 +789,27 @@ h3 {
   .intro,
   .enquiry,
   .service-detail,
-  .service-page,
+  .service-story,
+  .work-scope,
   .footer-inner,
   .detail-lists {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .gallery-grid figure:first-child {
+    grid-row: span 1;
+  }
+
+  .gallery-grid img {
+    height: 320px;
+  }
+
+  .gallery-grid figure:first-child img {
+    height: 320px;
   }
 
   .more-grid {

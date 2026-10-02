@@ -35,33 +35,65 @@ require __DIR__ . '/header.php';
   </div>
 </section>
 
-<section class="service-page">
-  <div class="detail-copy">
-    <p><?php echo e($service['summary']); ?></p>
-    <div class="detail-lists">
-      <div>
-        <h3>Included</h3>
-        <ul>
-          <?php foreach ($service['included'] as $item): ?>
-            <li><?php echo e($item); ?></li>
-          <?php endforeach; ?>
-        </ul>
-      </div>
-      <div>
-        <h3>Typical jobs</h3>
-        <ul>
-          <?php foreach ($service['jobs'] as $job): ?>
-            <li><?php echo e($job); ?></li>
-          <?php endforeach; ?>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="service-gallery">
-    <?php foreach ($service['gallery'] as $photo): ?>
-      <img src="<?php echo e($photo['src']); ?>" alt="<?php echo e($photo['alt']); ?>">
+<section class="service-story">
+  <div class="story-copy">
+    <p class="eyebrow">The work</p>
+    <h2><?php echo e($service['story_title']); ?></h2>
+    <?php foreach ($service['story'] as $paragraph): ?>
+      <p><?php echo e($paragraph); ?></p>
     <?php endforeach; ?>
   </div>
+  <img src="<?php echo e($service['gallery'][0]['src']); ?>" alt="<?php echo e($service['gallery'][0]['alt']); ?>">
+</section>
+
+<section class="work-steps">
+  <div class="section-heading">
+    <p class="eyebrow">In order</p>
+    <h2>How the work is carried out.</h2>
+  </div>
+  <ol class="step-list">
+    <?php foreach ($service['steps'] as $index => $step): ?>
+      <li>
+        <span><?php echo $index + 1; ?></span>
+        <h3><?php echo e($step['title']); ?></h3>
+        <p><?php echo e($step['text']); ?></p>
+      </li>
+    <?php endforeach; ?>
+  </ol>
+</section>
+
+<section class="work-gallery">
+  <div class="section-heading">
+    <p class="eyebrow">On site</p>
+    <h2>A closer look at the work.</h2>
+  </div>
+  <div class="gallery-grid">
+    <?php foreach ($service['gallery'] as $photo): ?>
+      <figure>
+        <img src="<?php echo e($photo['src']); ?>" alt="<?php echo e($photo['alt']); ?>">
+        <figcaption><?php echo e($photo['alt']); ?></figcaption>
+      </figure>
+    <?php endforeach; ?>
+  </div>
+</section>
+
+<section class="work-scope">
+  <article class="scope-card">
+    <h2>What is included</h2>
+    <ul>
+      <?php foreach ($service['included'] as $item): ?>
+        <li><?php echo e($item); ?></li>
+      <?php endforeach; ?>
+    </ul>
+  </article>
+  <article class="scope-card">
+    <h2>Typical jobs</h2>
+    <ul>
+      <?php foreach ($service['jobs'] as $job): ?>
+        <li><?php echo e($job); ?></li>
+      <?php endforeach; ?>
+    </ul>
+  </article>
 </section>
 
 <section class="more-services">
@@ -77,6 +109,7 @@ require __DIR__ . '/header.php';
         <span class="card-body">
           <h3><?php echo e($other['name']); ?></h3>
           <p class="coverage"><?php echo e($other['coverage']); ?></p>
+          <p><?php echo e($other['summary']); ?></p>
           <span class="card-link">Open this service</span>
         </span>
       </a>
