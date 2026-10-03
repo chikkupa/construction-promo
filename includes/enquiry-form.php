@@ -19,7 +19,7 @@ $sent = isset($_GET['sent']) && $_GET['sent'] === '1';
     <div class="enquiry-copy">
       <p class="eyebrow">Request a quote</p>
       <h2>Tell us about the house.</h2>
-      <p>Complete the form, and we will be in touch to arrange a look at the site in Kerala.</p>
+      <p>Tell us the town and the job. We will come and look before we quote.</p>
       <p class="enquiry-phone"><a href="tel:<?php echo e($site['phone_tel']); ?>"><?php echo e($site['phone_display']); ?></a></p>
     </div>
   </div>

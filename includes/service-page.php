@@ -46,6 +46,23 @@ require __DIR__ . '/header.php';
   <img src="<?php echo e($service['gallery'][0]['src']); ?>" alt="<?php echo e($service['gallery'][0]['alt']); ?>">
 </section>
 
+<?php if (!empty($service['choices'])): ?>
+<section class="system-choices">
+  <div class="section-heading">
+    <p class="eyebrow">The system</p>
+    <h2>Three ways a house can use the roof.</h2>
+  </div>
+  <div class="choice-grid">
+    <?php foreach ($service['choices'] as $choice): ?>
+      <article>
+        <h3><?php echo e($choice['title']); ?></h3>
+        <p><?php echo e($choice['text']); ?></p>
+      </article>
+    <?php endforeach; ?>
+  </div>
+</section>
+<?php endif; ?>
+
 <section class="work-steps">
   <div class="section-heading">
     <p class="eyebrow">In order</p>
@@ -95,6 +112,23 @@ require __DIR__ . '/header.php';
     </ul>
   </article>
 </section>
+
+<?php if (!empty($service['aftercare'])): ?>
+<section class="aftercare">
+  <div class="section-heading">
+    <p class="eyebrow">After the install</p>
+    <h2>The system still has someone to call.</h2>
+  </div>
+  <div class="choice-grid">
+    <?php foreach ($service['aftercare'] as $item): ?>
+      <article>
+        <h3><?php echo e($item['title']); ?></h3>
+        <p><?php echo e($item['text']); ?></p>
+      </article>
+    <?php endforeach; ?>
+  </div>
+</section>
+<?php endif; ?>
 
 <section class="more-services">
   <div class="section-heading">

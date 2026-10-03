@@ -61,7 +61,10 @@ if (!isset($active)) {
     <div class="header-inner">
       <a class="logo" href="index.php"><?php echo e($site['name']); ?></a>
       <input class="nav-toggle" type="checkbox" id="nav-toggle">
-      <label class="nav-burger" for="nav-toggle">Menu</label>
+      <label class="nav-burger" for="nav-toggle">
+        <span class="nav-burger-lines" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </label>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.php"<?php echo $active === 'home' ? ' aria-current="page"' : ''; ?>>Home</a>
         <?php foreach ($services as $navService): ?>

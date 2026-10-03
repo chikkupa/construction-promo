@@ -9,8 +9,8 @@ require __DIR__ . '/includes/header.php';
   <img class="hero-photo" src="images/hero-home.jpg" alt="A modern Kerala concrete house with a flat roof, porch, and coconut palms">
   <div class="hero-copy">
     <p class="eyebrow">For the house</p>
-    <h1><?php echo e($site['tagline']); ?></h1>
-    <p class="lede">A house needs a sound structure, dry rooms, a layout that fits daily life, walls that are properly finished, and a roof that can carry its own power.</p>
+    <h1>A concrete house, planned, built, sealed, painted, and powered.</h1>
+    <p class="lede">One team for the structure, the wet areas, the rooms, the paint, and the roof.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#enquiry">Get a quote</a>
       <a class="btn btn-line" href="<?php echo e(whatsapp_url()); ?>" target="_blank" rel="noopener">WhatsApp</a>
@@ -39,13 +39,14 @@ require __DIR__ . '/includes/header.php';
     <p class="stat-value"><span class="count" data-count="70">0</span>+</p>
     <p class="stat-label">Solar installations</p>
   </article>
+  <p class="stats-note">A free look at the house, a quote that lists what is included, and the site left clear when the work is done.</p>
 </section>
 
 <section class="intro">
   <div class="intro-copy">
     <p class="eyebrow">The work</p>
     <h2>From the structure to the rooms, the paint, and the roof.</h2>
-    <p>Each part of that work is handled as its own job. We look at the house first, agree what is included, and only then start. New builds, repairs, and the finishes that make a place feel complete all follow the same path.</p>
+    <p>Each part of that work is its own job. We look at the house first, agree what is included, and only then start.</p>
     <a class="text-link" href="services.php">See the services</a>
   </div>
   <img src="images/site-visit.jpg" alt="Two people talking on the concrete porch of a Kerala house">
@@ -106,16 +107,16 @@ require __DIR__ . '/includes/header.php';
   </div>
   <div class="reason-grid">
     <article>
-      <h3>A visit before the quote</h3>
-      <p>Prices follow what we see on site, not a guess from a phone description.</p>
+      <h3>One team</h3>
+      <p>From the foundation to the last finish.</p>
     </article>
     <article>
-      <h3>The scope in writing</h3>
-      <p>Materials, areas, and the work itself are listed so both sides know the job.</p>
+      <h3>Written before we start</h3>
+      <p>The scope is written down before anyone starts.</p>
     </article>
     <article>
-      <h3>Cleanup when we finish</h3>
-      <p>Floors, fittings, and the work area are left clear at the end of the visit.</p>
+      <h3>Priced from the site</h3>
+      <p>The price follows what we see on site.</p>
     </article>
   </div>
 </section>
